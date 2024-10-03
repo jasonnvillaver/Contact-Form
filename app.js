@@ -12,9 +12,9 @@
         
         console.log(this)
         emailjs.sendForm(service_vx29a4t, template_53slcp5, this)
-            .then(() => {
+            .then(function() {
                 alert('Message Sent Successfully!');
-            }, (error) => {
+            }, function(error) {
                 alert('Failed to send the message: ' + JSON.stringify(error));
             });
     });
