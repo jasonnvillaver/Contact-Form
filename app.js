@@ -9,7 +9,7 @@
         event.preventDefault();
         
         console.log(this)
-        emailjs.sendForm(service_vx29a4t, template_53slcp5, this)
+        emailjs.sendForm('service_vx29a4t', 'template_53slcp5', this)
             .then(function() {
                alert('Message Sent Successfully!');
            }, function(error) {
